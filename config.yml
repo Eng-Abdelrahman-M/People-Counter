@@ -1,0 +1,29 @@
+bz2_file: S1_L1.tar.bz2
+input_path: "data/input/"
+output_path: "data/output/"
+input_files: 
+    - "Crowd_PETS09/S1/L1/Time_13-57/View_001"
+    - "Crowd_PETS09/S1/L1/Time_13-57/View_002"
+    - "Crowd_PETS09/S1/L1/Time_13-57/View_003"
+    - "Crowd_PETS09/S1/L1/Time_13-57/View_004"
+    - "Crowd_PETS09/S1/L1/Time_13-59/View_001"
+    - "Crowd_PETS09/S1/L1/Time_13-59/View_002"
+    - "Crowd_PETS09/S1/L1/Time_13-59/View_003"
+    - "Crowd_PETS09/S1/L1/Time_13-59/View_004"
+    
+ROIs:
+    R0:
+        x1: 10
+        y1: 8
+        x2: 757
+        y2: 566
+    R1:
+        x1: 287
+        y1: 156
+        x2: 711
+        y2: 431
+    R2:
+        x1: 27
+        y1: 129
+        x2: 230
+        y2: 289
