@@ -2,13 +2,15 @@
 import torch
 import cv2
 import os
-
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+CACHE_PATH = os.path.join(ROOT_DIR, 'cache')
+torch.hub.set_dir(CACHE_PATH)
 
 class Model:
 
 
     def __init__(self):
-        self.model = torch.hub.load('core/yolov5', 'custom',path='core/yolov5/models/crowdhuman_yolov5m.pt',source='local')
+        self.model = torch.hub.load('ultralytics/yolov5', 'custom','crowdhuman_yolov5m.pt',force_reload=True)
 
     #function to calculate the intersection area between two rectangles. 
     @staticmethod
